@@ -13,11 +13,10 @@
   "name": "mastercarnes",
   "version": "1.0.0",
   "main": "tailwind.config.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss -i ./src/css/styles.css -o ./dist/styles.css --minify",
-    "start": "tailwindcss -i ./src/css/styles.css -o ./dist/styles.css --watch"
-  },
+"scripts": {
+  "build": "npx tailwindcss -i ./src/css/styles.css -o ./dist/styles.css --minify",
+  "start": "npx tailwindcss -i ./src/css/styles.css -o ./dist/styles.css --watch"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
