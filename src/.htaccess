@@ -1,0 +1,2 @@
+# Especifica o arquivo a ser usado para erros 404
+ErrorDocument 404 /erro404.html

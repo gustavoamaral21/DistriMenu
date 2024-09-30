@@ -1,0 +1,29 @@
+/* Importa o Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  scroll-behavior: smooth;
+}
+
+/* Adiciona estilos personalizados */
+#close-btn {
+  cursor: pointer;
+}
+
+/* Estilos adicionais para garantir que o carrossel ocupe 100% da tela */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evitar rolagem horizontal */
+}
+
+header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajuste para combinar com o design */
+}
+
+footer {
+  font-size: 0.875rem; /* Ajuste o tamanho da fonte, se necessário */
+}

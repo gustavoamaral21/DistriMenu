@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link href="/dist/styles.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="/src/images/logotipo.ico"
+      type="image/x-icon"
+    />
+    <title>Detalhes do Produto - Picanha Friboi</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Formulário para recebimento de promoções -->
+    <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <p class="text-sm leading-6 text-marrom">
+            <strong class="font-semibold">Distri Menu 2023</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Cadastre-se para receber promoções especiais.
+          </p>
+          <a href="#" class="flex-none rounded-full bg-marrom px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-marrom">Registrar Agora <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="flex flex-1 justify-end">
+          <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]" id="dismiss-button">
+            <span class="sr-only">Dismiss</span>
+            <svg class="h-5 w-5 text-marrom" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+  
+      <header class="bg-white">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+          <div class="flex lg:flex-1">
+            <a href="/src/index.html" class="-m-1.5 p-1.5">
+              <span class="sr-only">Distri Menu</span>
+              <img class="h-16 w-auto" src="/src/images/logotipo.webp" alt="">
+            </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" id="mobile-menu-button">
+              <span class="sr-only">Open main menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+            <div class="relative">
+              <button type="button" class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-marrom" aria-expanded="false" id="products-button">
+                Produtos
+                <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div class="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-marrom/5" id="products-menu">
+                <div class="p-4">
+                  <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                    <div class="flex h-14 w-14 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                        <img class="h-10 w-10" stroke="currentColor" src="/src/images/icon-churrasco.png" alt="" srcset="">
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-marrom">
+                        Churrasco
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">Cortes especiais para seu churrasco em familia.</p>
+                    </div>
+                  </div>
+                  <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                    <div class="flex h-14 w-14 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                      <img class="h-10 w-10" stroke="currentColor" src="/src/images/utensilios-de-cozinha.png" alt="" srcset="">
+                  </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-marrom">
+                        Dia a Dia
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">Carnes Suculentas para aquela receita especial.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="text-sm font-semibold leading-6 text-marrom">Sobre nós</a>
+            <a href="#" class="text-sm font-semibold leading-6 text-marrom">Fale Conosco</a>
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <!-- Adicione qualquer conteúdo adicional aqui -->
+          </div>
+        </nav>
+        <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-marrom/10">
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Distri Menu</span>
+              <img class="h-20 w-auto" src="/src/images/logotipo.webp" alt="">
+            </a>
+            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" id="mobile-menu-close-button">
+              <span class="sr-only">Fechar Menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6">
+            <a href="#" class="block text-sm font-semibold leading-6 text-marrom">Produtos</a>
+            <a href="#" class="block text-sm font-semibold leading-6 text-marrom mt-4">Sobre nós</a>
+            <a href="#" class="block text-sm font-semibold leading-6 text-marrom mt-4">Fale Conosco</a>
+          </div>
+        </div>
+      </header>
+<!-- Breadcrumb -->
+<nav class="flex px-5 py-3 text-gray-700 border border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
+    <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+      <li class="inline-flex items-center">
+        <a href="../index.html" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-vermelho dark:text-vermelho dark:hover:text-vermelho">
+          <svg class="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
+          </svg>
+          Home
+        </a>
+      </li>
+      <li aria-current="page">
+        <div class="flex items-center">
+          <svg class="rtl:rotate-180  w-3 h-3 mx-1 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Filé Mignon</span>
+        </div>
+      </li>
+    </ol>
+  </nav>
+    <main class="mt-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Seção do Produto -->
+<section class="bg-white shadow rounded-lg p-6 mb-6">
+    <div class="flex flex-col lg:flex-row lg:items-center mt-4">
+        <img src="/src/images/File_Mignon.webp" alt="Filé Mignon" class="w-full lg:w-1/2 rounded-lg">
+        <div class="lg:ml-6 mt-4 lg:mt-0">
+            <!-- Descrição do Produto -->
+            <section class="bg-white rounded-lg mb-6">
+                <h1 class="text-2xl font-bold text-marrom mb-4">Filé Mignon</h1>
+                <p class="text-gray-700">
+                    O Filé Mignon é um dos cortes mais nobres da carne, conhecido por sua maciez e sabor delicado. Ideal para pratos de ocasiões especiais, ele proporciona uma experiência gastronômica incomparável.
+                </p>
+            </section>
+            <!-- Modo de Preparo -->
+            <section class="bg-white rounded-lg mt-10 mb-6">
+                <h3 class="text-xl font-bold text-marrom mb-4">Modo de Preparo</h3>
+                <div class="grid grid-cols-2 gap-4 mt-4">
+                    <div class="flex items-center">
+                        <img src="/src/images/grelhar.png" alt="Grelhar" class="h-10 w-10 mr-2">
+                        <span class="text-gray-700 font-semibold">Grelhar</span>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="/src/images/fritar.png" alt="Fritar" class="h-10 w-10 mr-2">
+                        <span class="text-gray-700 font-semibold">Fritar</span>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="/src/images/assar.png" alt="Assar" class="h-10 w-10 mr-2">
+                        <span class="text-gray-700 font-semibold">Assar</span>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="/src/images/cozinhar.png" alt="Cozinhar" class="h-10 w-10 mr-2">
+                        <span class="text-gray-700 font-semibold">Cozinhar</span>
+                    </div>
+                </div>
+            </section>
+            <!-- Sugestões de Preparo -->
+            <section class="bg-white shadow rounded-lg p-6 mb-6">
+                <h3 class="text-xl font-bold text-marrom mb-4">Sugestões de Preparo</h3>
+                <p class="text-gray-700">
+                    Para preparar o Filé Mignon, recomenda-se grelhar em fogo alto por alguns minutos de cada lado. Tempere a gosto e sirva com um molho de sua preferência, acompanhado de um bom vinho tinto.
+                </p>
+            </section>
+        </div>
+    </div>
+</section>
+<!-- Informações Nutricionais -->
+<section class="bg-white shadow rounded-lg p-6 mb-6">
+    <h3 class="text-xl font-bold text-marrom mb-4">Informações Nutricionais</h3>
+    <table class="min-w-full border border-gray-300">
+        <thead>
+            <tr>
+                <th class="border border-gray-300 px-4 py-2 text-left">Nutriente</th>
+                <th class="border border-gray-300 px-4 py-2 text-left">Quantidade por 100g</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="border border-gray-300 px-4 py-2">Calorias</td>
+                <td class="border border-gray-300 px-4 py-2">220 kcal</td>
+            </tr>
+            <tr>
+                <td class="border border-gray-300 px-4 py-2">Proteínas</td>
+                <td class="border border-gray-300 px-4 py-2">21g</td>
+            </tr>
+            <tr>
+                <td class="border border-gray-300 px-4 py-2">Gorduras</td>
+                <td class="border border-gray-300 px-4 py-2">16g</td>
+            </tr>
+            <tr>
+                <td class="border border-gray-300 px-4 py-2">Carboidratos</td>
+                <td class="border border-gray-300 px-4 py-2">0g</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<!-- Seção de Produtos Relacionados -->
+<section class="bg-white shadow rounded-lg p-6 mb-6">
+    <h3 class="text-xl font-bold text-marrom mb-4">Produtos Relacionados</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="group relative">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
+                <img src="/src/images/Picanha_Friboi.webp" alt="Picanha Friboi" class="h-full w-full object-cover object-center">
+            </div>
+            <div class="mt-4 flex justify-between">
+                <div>
+                    <h4 class="text-sm text-gray-700">Picanha Friboi</h4>
+                    <p class="mt-1 text-sm text-gray-500">Ideal para churrascos suculentos.</p>
+                </div>
+                <p class="text-sm font-medium text-gray-900">R$ 60,00</p>
+            </div>
+        </div>
+        <!-- Adicione mais produtos relacionados aqui -->
+    </div>
+</section>
+
+    </main>
+
+    <footer class="bg-marrom text-white p-4 text-center">
+        <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+            <script>
+      // Função para abrir e fechar o menu mobile
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileMenuCloseButton = document.getElementById('mobile-menu-close-button');
+
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      mobileMenuCloseButton.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+
+      // Função para abrir e fechar o dropdown Produtos
+      const produtosButton = document.getElementById('products-button');
+      const dropdownMenu = document.getElementById('products-menu');
+
+      produtosButton.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('hidden');
+      });
+
+      // Fechar o dropdown quando clicar fora dele
+      document.addEventListener('click', (event) => {
+        const isClickInside = produtosButton.contains(event.target) || dropdownMenu.contains(event.target);
+        if (!isClickInside) {
+          dropdownMenu.classList.add('hidden');
+        }
+      });
+
+      // Função para fechar o formulário de promoções
+      const dismissButton = document.getElementById('dismiss-button');
+      dismissButton.addEventListener('click', () => {
+        document.querySelector('.relative.isolate').classList.add('hidden');
+      });
+    </script>
+
+<script>
+  document
+    .getElementById("close-btn")
+    .addEventListener("click", function () {
+      document.getElementById("promotion-section").style.display = "none";
+    });
+</script>
+
+<script src="node_modules/@material-tailwind/html@latest/scripts/ripple.js"></script>
+    </footer>
+</body>
+</html>
