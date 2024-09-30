@@ -14,11 +14,11 @@
   "name": "mastercarnes",
   "version": "1.0.0",
   "main": "tailwind.config.js",
-"scripts": {
-  "postinstall": "npx tailwindcss -i ./src/css/styles.css -o ./dist/styles.css --minify",
-  "build": "npx tailwindcss -i ./src/css/styles.css -o ./dist/styles.css --minify",
-  "start": "npx tailwindcss -i ./src/css/styles.css -o ./dist/styles.css --watch"
-},
+  "scripts": {
+    "preinstall": "chmod +x ./node_modules/.bin/tailwindcss",
+    "build": "npx tailwindcss -i ./src/css/styles.css -o ./dist/styles.css --minify",
+    "start": "npx tailwindcss -i ./src/css/styles.css -o ./dist/styles.css --watch"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
