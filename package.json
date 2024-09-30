@@ -16,8 +16,8 @@
   "main": "tailwind.config.js",
   "scripts": {
     "preinstall": "chmod -R 777 ./node_modules/.bin/tailwindcss",
-    "build": "npx tailwindcss -i ./src/css/styles.css -o ./dist/styles.css --minify",
-    "start": "npx tailwindcss -i ./src/css/styles.css -o ./dist/styles.css --watch"
+    "build": "npx tailwindcss -i ./public/css/styles.css -o ./dist/styles.css --minify",
+    "start": "npx tailwindcss -i ./public/css/styles.css -o ./dist/styles.css --watch"
   },
   "keywords": [],
   "author": "",
