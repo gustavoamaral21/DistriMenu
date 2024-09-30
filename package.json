@@ -15,10 +15,10 @@
   "version": "1.0.0",
   "main": "tailwind.config.js",
 "scripts": {
-  "build": "postcss ./src/css/styles.css -o ./dist/styles.css --minify",
-  "start": "postcss ./src/css/styles.css -o ./dist/styles.css --watch"
-}
-,
+  "postinstall": "npx tailwindcss -i ./src/css/styles.css -o ./dist/styles.css --minify",
+  "build": "npx tailwindcss -i ./src/css/styles.css -o ./dist/styles.css --minify",
+  "start": "npx tailwindcss -i ./src/css/styles.css -o ./dist/styles.css --watch"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
