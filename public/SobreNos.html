@@ -4,16 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <title>Distri menu</title>
     <link href="/dist/styles.css" rel="stylesheet" />
-    <link
-      rel="shortcut icon"
-      href="images/logotipo.ico"
-      type="image/x-icon"
-    />
-    <link href="../dist/styles.css" rel="stylesheet" />
     <link href="./styles.css" rel="stylesheet" />
     <link href="./css/styles.css" rel="stylesheet" />
-    <title>Detalhes dos Produtos - Todos os Produtos</title>
+    <link
+      rel="shortcut icon"
+      href="./images/logotipo.ico"
+      type="image/x-icon"
+    />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   </head>
   <body class="bg-branco text-vermelho font-sans">
@@ -38,7 +37,7 @@
     <header class="bg-white">
       <nav class="mx-auto flex max-w-6xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
-          <a href="#" class="-m-1.5 p-1.5">
+          <a href="/public/index.html" class="-m-1.5 p-1.5">
             <span class="sr-only">Distri Menu</span>
             <img class="h-20 w-auto" src="./images/logotipo.webp" alt="">
           </a>
@@ -90,7 +89,7 @@
                     <img class="h-10 w-10" stroke="currentColor" src="./images/produtos.png" alt="" srcset="">
                 </div>
                   <div class="flex-auto">
-                    <a href="Mostrar_Mais.html" class="block font-semibold text-marrom">
+                    <a href="MostrarMais.html" class="block font-semibold text-marrom">
                       Todos os cortes
                       <span class="absolute inset-0"></span>
                     </a>
@@ -100,8 +99,8 @@
               </div>
             </div>
           </div>
-          <a href="#" class="text-sm font-semibold leading-6 text-marrom">Sobre nós</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-marrom">Fale Conosco</a>
+          <a href="SobreNos.html" class="text-sm font-semibold leading-6 text-marrom">Sobre nós</a>
+          <a href="FaleConosco.html" class="text-sm font-semibold leading-6 text-marrom">Fale Conosco</a>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
           <!-- Adicione qualquer conteúdo adicional aqui -->
@@ -122,250 +121,82 @@
         </div>
         <div class="mt-6">
           <a href="#" class="block text-sm font-semibold leading-6 text-marrom">Produtos</a>
-          <a href="#" class="block text-sm font-semibold leading-6 text-marrom mt-4">Sobre nós</a>
-          <a href="#" class="block text-sm font-semibold leading-6 text-marrom mt-4">Fale Conosco</a>
+          <a href="SobreNos.html" class="block text-sm font-semibold leading-6 text-marrom mt-4">Sobre nós</a>
+          <a href="FaleConosco.html" class="block text-sm font-semibold leading-6 text-marrom mt-4">Fale Conosco</a>
         </div>
       </div>
     </header>
-<!-- Breadcrumb -->
-<nav class="flex px-5 py-3 text-gray-700 border border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
-    <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
-      <li class="inline-flex items-center">
-        <a href="index.html" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-vermelho dark:text-vermelho dark:hover:text-vermelho">
-          <svg class="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-            <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
-          </svg>
-          Home
-        </a>
-      </li>
-      <li aria-current="page">
-        <div class="flex items-center">
-          <svg class="rtl:rotate-180  w-3 h-3 mx-1 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-          </svg>
-          <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Produtos</span>
-        </div>
-      </li>
-    </ol>
-  </nav>
-    <main class="">    
-        <div id="churrasco"></div>
-        <section id="produtos" class="mb-1">
-            <div class="mx-auto max-w-2xl px-4 py-10 lg:max-w-7xl lg:px-8">
-                <h2 class="text-5xl font-bold tracking-tight text-marrom">Todos nossos produtos</h2>
-                <div class="flex flex-col sm:flex-row sm:justify-between items-start sm:items-center">
-                </div>
-                <div class="mt-6">
-                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4">
-                        <!-- Barra de pesquisa -->
-                        <input type="text" id="search" placeholder="Pesquisar produtos..." class="border text-marrom border-gray-300 rounded-md p-2 w-full sm:w-1/2 mr-2" />
-                        
-                        <!-- Filtro de A a Z -->
-                        <select id="filter" class="border text-marrom border-gray-300 rounded-md p-2 w-full sm:w-1/3">
-                            <option value="">Filtrar de A a Z</option>
-                            <option value="A-Z">A-Z</option>
-                            <option value="Z-A">Z-A</option>
-                        </select>
-                    </div>
-                    <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-2 xl:gap-x-8" id="product-list">
-                        <!-- Picanha -->
-                        <div class="group relative flex items-center mb-4">
-                            <div class="w-24 h-24 overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
-                                <img src="images/Picanha_Friboi.webp" alt="Picanha" class="h-full w-full object-cover object-center">
-                            </div>
-                            <div class="ml-4 flex-1">
-                                <h3 class="text-lg text-gray-700">
-                                    <a href="produtos/picanha.html">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Picanha
-                                    </a>
-                                </h3>
-                                <p class="mt-1 text-sm text-gray-500">Corte nobre ideal para churrasco, suculento e macio.</p>
-                                <p class="text-sm font-medium text-marrom">R$77</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Alcatra Com Maminha -->
-                        <div class="group relative flex items-center mb-4">
-                            <div class="w-24 h-24 overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
-                                <img src="images/Alcatra_Com_Maminha.webp" alt="Alcatra Com Maminha" class="h-full w-full object-cover object-center">
-                            </div>
-                            <div class="ml-4 flex-1">
-                                <h3 class="text-lg text-gray-700">
-                                    <a href="produtos/alcatra_com_maminha.html">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Alcatra Com Maminha
-                                    </a>
-                                </h3>
-                                <p class="mt-1 text-sm text-gray-500">Um dos cortes mais pedidos nos churrascos, tem sabor e maciez inconfundíveis.</p>
-                                <p class="text-sm font-medium text-marrom">R$77</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Maminha -->
-                        <div class="group relative flex items-center mb-4">
-                            <div class="w-24 h-24 overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
-                                <img src="images/Maminha_Friboi.webp" alt="Maminha" class="h-full w-full object-cover object-center">
-                            </div>
-                            <div class="ml-4 flex-1">
-                                <h3 class="text-lg text-gray-700">
-                                    <a href="produtos/maminha.html">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Maminha
-                                    </a>
-                                </h3>
-                                <p class="mt-1 text-sm text-gray-500">Com uma camada de gordura, a carne fica suculenta e saborosa.</p>
-                                <p class="text-sm font-medium text-marrom">R$77</p>
-                            </div>
-                        </div>
-        
-                        <!-- Filé Mignon -->
-                        <div class="group relative flex items-center mb-4">
-                            <div class="w-24 h-24 overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
-                                <img src="images/File_Mignon.webp" alt="Filé Mignon" class="h-full w-full object-cover object-center">
-                            </div>
-                            <div class="ml-4 flex-1">
-                                <h3 class="text-lg text-gray-700">
-                                    <a href="produtos/file_mignon.html">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Filé Mignon
-                                    </a>
-                                </h3>
-                                <p class="mt-1 text-sm text-gray-500">Ideal para pratos de ocasiões especiais ou acompanhamento de outros pratos.</p>
-                                <p class="text-sm font-medium text-marrom">R$77</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Coxão Mole -->
-                        <div class="group relative flex items-center mb-4">
-                            <div class="w-24 h-24 overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
-                                <img src="images/cocao_mole.webp" alt="Coxão Mole" class="h-full w-full object-cover object-center">
-                            </div>
-                            <div class="ml-4 flex-1">
-                                <h3 class="text-lg text-gray-700">
-                                    <a href="produtos/coxaomole.html">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Coxão Mole
-                                    </a>
-                                </h3>
-                                <p class="mt-1 text-sm text-gray-500">Ótimo para ensopados e pratos no forno.</p>
-                                <p class="text-sm font-medium text-marrom">R$77</p>
-                            </div>
-                        </div>
-        
-                        <!-- Contra Filé -->
-                        <div class="group relative flex items-center mb-4">
-                            <div class="w-24 h-24 overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
-                                <img src="images/Contra_File.webp" alt="Contra Filé" class="h-full w-full object-cover object-center">
-                            </div>
-                            <div class="ml-4 flex-1">
-                                <h3 class="text-lg text-gray-700">
-                                    <a href="produtos/contra_file.html">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Contra Filé
-                                    </a>
-                                </h3>
-                                <p class="mt-1 text-sm text-gray-500">Um corte nobre e macio, perfeito para grelhar ou assar.</p>
-                                <p class="text-sm font-medium text-marrom">R$77</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Costela Traseira Tiras Com Osso -->
-                        <div class="group relative flex items-center mb-4">
-                            <div class="w-24 h-24 overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
-                                <img src="images/Costela.webp" alt="Costela Traseira Tiras Com Osso" class="h-full w-full object-cover object-center">
-                            </div>
-                            <div class="ml-4 flex-1">
-                                <h3 class="text-lg text-gray-700">
-                                    <a href="produtos/costela_traseira_tiras_com_osso.html">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Costela Traseira Tiras Com Osso
-                                    </a>
-                                </h3>
-                                <p class="mt-1 text-sm text-gray-500">Perfeita para um bom churrasco, suculenta e cheia de sabor.</p>
-                                <p class="text-sm font-medium text-marrom">R$77</p>
-                            </div>
-                        </div>
-        
-                        <!-- Patinho -->
-                        <div class="group relative flex items-center mb-4">
-                            <div class="w-24 h-24 overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
-                                <img src="images/Patinho.webp" alt="Patinho" class="h-full w-full object-cover object-center">
-                            </div>
-                            <div class="ml-4 flex-1">
-                                <h3 class="text-lg text-gray-700">
-                                    <a href="produtos/patinho.html">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Patinho
-                                    </a>
-                                </h3>
-                                <p class="mt-1 text-sm text-gray-500">Ideal para carne moída e carnes cozidas.</p>
-                                <p class="text-sm font-medium text-marrom">R$77</p>
-                            </div>
-                        </div>
-        
-                        <!-- Coração de Frango -->
-                        <div class="group relative flex items-center mb-4">
-                            <div class="w-24 h-24 overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
-                                <img src="images/CORACAO-DE-FRANGO-SEARA-1KG.webp" alt="Coração de Frango" class="h-full w-full object-cover object-center">
-                            </div>
-                            <div class="ml-4 flex-1">
-                                <h3 class="text-lg text-gray-700">
-                                    <a href="produtos/coracao_frango.html">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Coração de Frango
-                                    </a>
-                                </h3>
-                                <p class="mt-1 text-sm text-gray-500">Uma opção deliciosa e popular em churrascos.</p>
-                                <p class="text-sm font-medium text-marrom">R$77</p>
-                            </div>
-                        </div>
-        
-                        <!-- Linguiça -->
-                        <div class="group relative flex items-center mb-4">
-                            <div class="w-24 h-24 overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
-                                <img src="images/Linguiça de Pernil.webp" alt="Linguiça" class="h-full w-full object-cover object-center">
-                            </div>
-                            <div class="ml-4 flex-1">
-                                <h3 class="text-lg text-gray-700">
-                                    <a href="produtos/linguica_pernil.html">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Linguiça de pernil
-                                    </a>
-                                </h3>
-                                <p class="mt-1 text-sm text-gray-500">Uma ótima escolha para complementar o churrasco.</p>
-                                <p class="text-sm font-medium text-marrom">R$77</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
-            <div class="flex flex-1 justify-between sm:hidden">
-                <button id="prev-page" class="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Previous</button>
-                <button id="next-page" class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Next</button>
-            </div>
-            <div class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
-                <div>
-                    <p id="result-info" class="text-sm text-gray-700">
-                        Mostrando de <span class="font-medium">1</span> a <span class="font-medium">10</span> de <span class="font-medium">97</span> results
-                    </p>
-                </div>
-                <div>
-                    <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination" id="pagination"></nav>
-                </div>
-            </div>
-        </div>
-    </main>
 
+    <main class="">
+<!-- Página "Quem Somos" -->
+<section class="bg-white shadow rounded-lg p-6 mb-6">
+    <div class="flex flex-col lg:flex-row lg:items-center mt-4">
+        <img src="/public/images/logotipo.webp" alt="Distri Menu" class="w-full lg:w-1/2 rounded-lg">
+        <div class="lg:ml-6 mt-4 lg:mt-0">
+            <!-- Título e Descrição -->
+            <h1 class="text-2xl font-bold tracking-tight text-marrom">Quem Somos</h1>
+            <p class="text-gray-700">
+                A Distri Menu é um açougue tradicional, com anos de experiência em fornecer carnes da mais alta qualidade para seus clientes. 
+                Nossa história começa com o compromisso de oferecer os melhores cortes, sempre frescos e com um atendimento personalizado que faz 
+                toda a diferença. Estamos localizados em [Endereço], servindo a comunidade local com paixão e dedicação.
+            </p>
+            <p class="text-gray-700 mt-4">
+                Nosso objetivo é sempre entregar produtos de qualidade e garantir que nossos clientes tenham uma excelente experiência, seja em uma 
+                simples compra de carne para o dia a dia ou para aquele churrasco especial. Prezamos pela transparência e pelo respeito com todos os nossos clientes e fornecedores.
+            </p>
+        </div>
+    </div>
+    <!-- Missão, Visão e Valores -->
+    <section class="bg-white shadow rounded-lg p-6 mb-6">
+        <h2 class="text-2xl font-bold tracking-tight text-marrom">Missão, Visão e Valores</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-gray-100 p-4 rounded-lg shadow">
+                <h3 class="text-lg font-bold tracking-tight text-marrom">Missão</h3>
+                <p class="text-gray-700 mt-2">
+                    Nossa missão é oferecer carne de qualidade superior, prezando pela satisfação de nossos clientes, sempre com compromisso e dedicação.
+                </p>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow">
+                <h3 class="text-lg font-bold tracking-tight text-marrom">Visão</h3>
+                <p class="text-gray-700 mt-2">
+                    Ser reconhecido como o açougue referência em qualidade de carne e atendimento na nossa região.
+                </p>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow">
+                <h3 class="text-lg font-bold tracking-tight text-marrom">Valores</h3>
+                <p class="text-gray-700 mt-2">
+                    Ética, respeito, compromisso com a qualidade, atendimento diferenciado e transparência com nossos clientes e fornecedores.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Localização -->
+    <section class="bg-white rounded-lg p-6 mb-6">
+        <h2 class="text-2xl font-bold tracking-tight text-marrom">Onde Estamos</h2>
+        <p class="text-gray-700 mb-6">
+            Venha nos visitar em nossa loja física e conferir nossos produtos de perto! Estamos localizados em [Endereço] e atendemos toda a região. 
+            Nossa loja oferece um ambiente acolhedor, onde você poderá contar com a ajuda de nossa equipe para escolher os melhores cortes de carne.
+        </p>
+        <div class="flex justify-center">
+          <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.83543450964!2d144.9559283157568!3d-37.81720974206316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43d7981bbf%3A0xb1c6e2b02a41a1b1!2sA%C3%A7ougue+Master+Carnes!5e0!3m2!1spt-BR!2sbr!4v1633029421079!5m2!1spt-BR!2sbr" 
+          width="100%" 
+          height="400" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+      </iframe>
+        </div>
+    </section>
+</section>
+    </main>
     <footer class="w-full bg-gradient-to-r mt-10 from-vermelho2 to-vermelho">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <!--Grid-->
           <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-8 py-10 max-sm:max-w-sm max-sm:mx-auto gap-y-8">
               <div class="col-span-full mb-10 lg:col-span-2 lg:mb-0">
-                  <a href="http://127.0.0.1:5500/public"  class="flex justify-center lg:justify-start">
-                    <img class="h-20 w-auto" src="images/logotipo.webp" alt="">
+                  <a href="/public/index.html"  class="flex justify-center lg:justify-start">
+                    <img class="h-20 w-auto" src="./images/logotipo.webp" alt="">
                   </a>
                   <p class="py-8 text-sm text-marrom lg:max-w-xs text-center lg:text-left">Açougue há mais de 5 anos no mercado. Alguma duvida?</p>
                   <a href="http://api.whatsapp.com/send?phone=5512981064159"  class="py-2.5 px-5 h-9 block w-fit bg-marrom rounded-full shadow-sm text-xs text-white mx-auto transition-all  duration-500 hover:bg-amber-950 lg:mx-0">
@@ -479,6 +310,5 @@
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 <script src="node_modules/@material-tailwind/html@latest/scripts/ripple.js"></script>
-<script src="js/busca_produto.js"></script>
   </body>
 </html>

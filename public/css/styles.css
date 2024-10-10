@@ -23,6 +23,15 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajuste para combinar com o design */
 }
 
+/* CSS global */
+input:focus, 
+textarea:focus, 
+select:focus {
+  outline: none; /* Remove o contorno padrão */
+  box-shadow: 0 0 0 2px #241301; /* Adiciona uma sombra marrom */
+}
+
+
 footer {
   font-size: 0.875rem; /* Ajuste o tamanho da fonte, se necessário */
 }

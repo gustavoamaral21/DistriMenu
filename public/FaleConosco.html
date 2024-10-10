@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <title>Distri menu</title>
     <link href="/dist/styles.css" rel="stylesheet" />
-    <link href="./styles.css" rel="stylesheet" />
-    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="../public/css/styles.css" rel="stylesheet" />
     <link
       rel="shortcut icon"
       href="./images/logotipo.ico"
@@ -37,7 +36,7 @@
     <header class="bg-white">
       <nav class="mx-auto flex max-w-6xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
-          <a href="#" class="-m-1.5 p-1.5">
+          <a href="/public/index.html" class="-m-1.5 p-1.5">
             <span class="sr-only">Distri Menu</span>
             <img class="h-20 w-auto" src="./images/logotipo.webp" alt="">
           </a>
@@ -65,7 +64,7 @@
                       <img class="h-10 w-10" stroke="currentColor" src="./images/icon-churrasco.png" alt="" srcset="">
                   </div>
                   <div class="flex-auto">
-                    <a href="#churrasco" class="block font-semibold text-marrom">
+                    <a href="index.html#churrasco" class="block font-semibold text-marrom">
                       Churrasco
                       <span class="absolute inset-0"></span>
                     </a>
@@ -77,7 +76,7 @@
                     <img class="h-10 w-10" stroke="currentColor" src="images/utensilios-de-cozinha.png" alt="" srcset="">
                 </div>
                   <div class="flex-auto">
-                    <a href="#diaadia" class="block font-semibold text-marrom">
+                    <a href="index.html#diaadia" class="block font-semibold text-marrom">
                       Dia a Dia
                       <span class="absolute inset-0"></span>
                     </a>
@@ -89,7 +88,7 @@
                     <img class="h-10 w-10" stroke="currentColor" src="./images/produtos.png" alt="" srcset="">
                 </div>
                   <div class="flex-auto">
-                    <a href="./MostrarMais.html" class="block font-semibold text-marrom">
+                    <a href="MostrarMais.html" class="block font-semibold text-marrom">
                       Todos os cortes
                       <span class="absolute inset-0"></span>
                     </a>
@@ -121,268 +120,129 @@
         </div>
         <div class="mt-6">
           <a href="#" class="block text-sm font-semibold leading-6 text-marrom">Produtos</a>
-          <a href="#" class="block text-sm font-semibold leading-6 text-marrom mt-4">Sobre nós</a>
-          <a href="#" class="block text-sm font-semibold leading-6 text-marrom mt-4">Fale Conosco</a>
+          <a href="SobreNos.html" class="block text-sm font-semibold leading-6 text-marrom mt-4">Sobre nós</a>
+          <a href="FaleConosco.html" class="block text-sm font-semibold leading-6 text-marrom mt-4">Fale Conosco</a>
         </div>
       </div>
     </header>
 
     <main class="">
-      <section id="banner" class="relative overflow-hidden">
-        <div id="default-banner" class="relative w-full h-auto">
-            <img src="./images/banner.webp" 
-                class="w-full h-auto object-cover" 
-                alt="Imagem 1">             
+<!-- Página "Fale Conosco" -->
+<section class="bg-gray-100 py-12">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Título e Introdução -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Fale Conosco</h1>
+            <p class="text-lg text-gray-600">Precisa de ajuda? Preencha o formulário abaixo ou entre em contato através dos nossos canais de atendimento. Estamos prontos para atendê-lo!</p>
         </div>
-    </section>
-    
-<div id="churrasco"></div>
-      <section id="produtos" class="mb-1">
-          <div class="mx-auto max-w-2xl px-4 py-10 lg:max-w-7xl lg:px-8">
-            <h2 class="text-5xl font-bold tracking-tight text-marrom">Churrasco</h2>
-            <div class="flex flex-col sm:flex-row sm:justify-between items-start sm:items-center">
-              <p class="text-marrom mb-4 sm:mb-0">
-                Cortes selecionados para aquele churrasco em familia, produtos ideais para o seu churrasco.
-              </p>
-              <a href="MostrarMais.html" class="text-marrom font-bold">
-                Ver Todos
-              </a>
-            </div>
-            <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-              <div class="group relative">
-                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                    <img src="./images/Picanha_Friboi.webp" alt="Picanha" class="h-full w-full object-cover object-center lg:h-full lg:w-full">
-                </div>
-                <div class="mt-4 flex justify-between">
+
+        <!-- Grid para Formulário e Informações de Contato -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Formulário de Contato -->
+            <div class="bg-white shadow-md rounded-lg p-8">
+                <h2 class="text-2xl font-bold tracking-tight text-marrom mb-6">Envie sua Mensagem</h2>
+                <form action="/enviar-contato" method="POST" class="space-y-6">
+                    <!-- Nome -->
                     <div>
-                        <h3 class="text-sm text-gray-700">
-                            <a href="./produtos/picanha.html">
-                                <span aria-hidden="true" class="absolute inset-0"></span>
-                                Picanha
-                            </a>
-                        </h3>
-                        <p class="mt-1 text-sm text-gray-500">Corte nobre ideal para churrasco, suculento e macio.</p>
+                        <label for="nome" class="block text-sm font-medium text-gray-700">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-[#5B3A2F] focus:border-[#5B3A2F] sm:text-sm">
                     </div>
-                    
+
+                    <!-- E-mail -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-marrom focus:border-marrom sm:text-sm">
+                    </div>
+
+                    <!-- Mensagem -->
+                    <div>
+                        <label for="mensagem" class="block text-sm font-medium text-gray-700">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-marrom focus:border-marrom sm:text-sm"></textarea>
+                    </div>
+
+                    <!-- Botão de Enviar -->
+                    <div>
+                        <button type="submit" class="w-full bg-marrom text-white py-2 px-4 rounded-md shadow hover:bg-amber-950 focus:ring-2 focus:ring-marrom focus:ring-opacity-50">
+                            Enviar Mensagem
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Informações de Contato -->
+            <div class="bg-white shadow-md rounded-lg p-8">
+                <h2 class="text-2xl font-bold tracking-tight text-marrom mb-6">Informações de Contato</h2>
+                <div class="space-y-4">
+                    <!-- Endereço -->
+                    <div class="flex items-start space-x-4">
+                        <svg class="w-6 h-6 text-marrom" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.172 11.172a4 4 0 11-5.657 5.657 4 4 0 015.657-5.657zM12 14h.01M12 6a4 4 0 014 4v1m-8 0v-1a4 4 0 018 0v1m4 0v-1a4 4 0 00-8 0m4 0v1a4 4 0 01-8 0v-1a4 4 0 018-0z"/>
+                        </svg>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800">Endereço</h3>
+                            <p class="text-gray-600">Rua Exemplo, 123<br>Bairro Exemplo, Cidade - Estado<br>CEP: 12345-678</p>
+                        </div>
+                    </div>
+
+                    <!-- Telefone -->
+                    <div class="flex items-start space-x-4">
+                        <svg class="w-6 h-6 text-marrom" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h1v4h-1m2 0h2a2 2 0 002-2v-2a2 2 0 00-2-2h-2v4m4 0h2a2 2 0 002-2v-2a2 2 0 00-2-2h-2v4"/>
+                        </svg>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800">Telefone</h3>
+                            <p class="text-gray-600">(11) 1234-5678</p>
+                        </div>
+                    </div>
+
+                    <!-- E-mail -->
+                    <div class="flex items-start space-x-4">
+                        <svg class="w-6 h-6 text-marrom" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 3H8a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2zM8 7h8M8 11h8M8 15h8"/>
+                        </svg>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800">E-mail</h3>
+                            <p class="text-gray-600">contato@distrimenu.com.br</p>
+                        </div>
+                    </div>
+
+                    <!-- Horário de Funcionamento -->
+                    <div class="flex items-start space-x-4">
+                        <svg class="w-6 h-6 text-marrom" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l2 2"/>
+                        </svg>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800">Horário de Funcionamento</h3>
+                            <p class="text-gray-600">Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 14h</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-              <div class="group relative">
-                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                  <img src="./images/File_Mignon.webp" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
-                </div>
-                <div class="mt-4 flex justify-between">
-                  <div>
-                    <h3 class="text-sm text-gray-700">
-                      <a href="./produtos/file_mignon.html">
-                        <span aria-hidden="true" class="absolute inset-0"></span>
-                        Filé Mignon
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-sm text-gray-500">Ideal para pratos de ocasiões especiais ou acompanhamento de outros pratos.</p>
-                  </div>
-                  
-                </div>
-              </div>
-
-              <div class="group relative">
-                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                  <img src="./images/Maminha_Friboi.webp" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
-                </div>
-                <div class="mt-4 flex justify-between">
-                  <div>
-                    <h3 class="text-sm text-gray-700">
-                      <a href="./produtos/maminha.html">
-                        <span aria-hidden="true" class="absolute inset-0"></span>
-                        Maminha
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-sm text-gray-500">Com uma camada de gordura, a carne fica suculenta e saborosa.</p>
-                  </div>
-                  
-                </div>
-              </div>
-
-              <div class="group relative">
-                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                  <img src="./images/Alcatra_Com_Maminha.webp" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
-                </div>
-                <div class="mt-4 flex justify-between">
-                  <div>
-                    <h3 class="text-sm text-gray-700">
-                      <a href="./produtos/alcatra_com_maminha.html">
-                        <span aria-hidden="true" class="absolute inset-0"></span>
-                        Alcatra Com Maminha
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-sm text-gray-500">Um dos cortes mais pedidos nos churrascos, tem sabor e maciez inconfundíveis.</p>
-                  </div>
-                  <button type="button" class="adz ajw aqw ban bbt biv bpb bpc bpe bpl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="of si"><path d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z"></path></svg></button>                </div>
-              </div>
+        </div>
+        
+        <!-- Mapa -->
+        <div class="mt-12">
+            <h2 class="text-2xl font-bold text-gray-700 text-center mb-6">Localização</h2>
+            <div class="flex justify-center">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.83543450964!2d144.9559283157568!3d-37.81720974206316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43d7981bbf%3A0xb1c6e2b02a41a1b1!2sA%C3%A7ougue+Master+Carnes!5e0!3m2!1spt-BR!2sbr!4v1633029421079!5m2!1spt-BR!2sbr" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
             </div>
-          </div>
-<div id="diaadia"></div>
-          <div class="mx-auto max-w-2xl px-4  lg:max-w-7xl lg:px-8">
-            <h2 class="text-5xl font-bold tracking-tight text-marrom">Dia a dia</h2>
-            <div class="flex flex-col sm:flex-row sm:justify-between items-start sm:items-center">
-              <p class="text-marrom mb-4 sm:mb-0">
-                Cortes selecionados para o seu dia a dia, produtos ideais para sua cozinha.
-              </p>
-              <a href="MostrarMais.html" class="text-marrom font-bold">
-                Ver Todos
-              </a>
-            </div>
-            <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-              <div class="group relative">
-                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                  <img src="./images/cocao_mole.webp" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
-                </div>
-                <div class="mt-4 flex justify-between">
-                  <div>
-                    <h3 class="text-sm text-gray-700">
-                      <a href="./produtos/coxao_mole.html">
-                        <span aria-hidden="true" class="absolute inset-0"></span>
-                        Coxão mole
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-sm text-gray-500">Corte nobre ideal para churrasco, suculento e macio.</p>
-                  </div>
-                  
-                </div>
-              </div>
-              <div class="group relative">
-                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                  <img src="./images/patinho.webp" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
-                </div>
-                <div class="mt-4 flex justify-between">
-                  <div>
-                    <h3 class="text-sm text-gray-700">
-                      <a href="./produtos/patinho.html">
-                        <span aria-hidden="true" class="absolute inset-0"></span>
-                        Patinho
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-sm text-gray-500">Ideal para pratos de ocasiões especiais ou acompanhamento de outros pratos.</p>
-                  </div>
-                  
-                </div>
-              </div>
-
-              <div class="group relative">
-                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                  <img src="./images/acem.webp" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
-                </div>
-                <div class="mt-4 flex justify-between">
-                  <div>
-                    <h3 class="text-sm text-gray-700">
-                      <a href="./produtos/acem.html">
-                        <span aria-hidden="true" class="absolute inset-0"></span>
-                        Acem
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-sm text-gray-500">Com uma camada de gordura, a carne fica suculenta e saborosa.</p>
-                  </div>
-                  
-                </div>
-              </div>
-
-              <div class="group relative">
-                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                  <img src="./images/Paleta.webp" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
-                </div>
-                <div class="mt-4 flex justify-between">
-                  <div>
-                    <h3 class="text-sm text-gray-700">
-                      <a href="./produtos/paleta.html">
-                        <span aria-hidden="true" class="absolute inset-0"></span>
-                        Paleta
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-sm text-gray-500">Um dos cortes mais pedidos nos churrascos, tem sabor e maciez inconfundíveis.</p>
-                  </div>
-                  <button type="button" class="adz ajw aqw ban bbt biv bpb bpc bpe bpl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="of si"><path d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z"></path></svg></button>                </div>
-              </div>
-              
-              <div class="group relative">
-                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                  <img src="./images/Cupim.webp" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
-                </div>
-                <div class="mt-4 flex justify-between">
-                  <div>
-                    <h3 class="text-sm text-gray-700">
-                      <a href="./produtos/cupim.html">
-                        <span aria-hidden="true" class="absolute inset-0"></span>
-                        Cupim
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-sm text-gray-500">Corte nobre ideal para churrasco, suculento e macio.</p>
-                  </div>
-                  
-                </div>
-              </div>
-              <div class="group relative">
-                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                  <img src="./images/Lagarto.webp" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
-                </div>
-                <div class="mt-4 flex justify-between">
-                  <div>
-                    <h3 class="text-sm text-gray-700">
-                      <a href="./produtos/lagarto.html">
-                        <span aria-hidden="true" class="absolute inset-0"></span>
-                        Lagarto
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-sm text-gray-500">Ideal para pratos de ocasiões especiais ou acompanhamento de outros pratos.</p>
-                  </div>
-                  
-                </div>
-              </div>
-
-              <div class="group relative">
-                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                  <img src="./images/Costela.webp" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
-                </div>
-                <div class="mt-4 flex justify-between">
-                  <div>
-                    <h3 class="text-sm text-gray-700">
-                      <a href="./produtos/costela_traseira_tiras_com_osso.html">
-                        <span aria-hidden="true" class="absolute inset-0"></span>
-                        Costela Traseira Tiras Com Osso
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-sm text-gray-500">Com uma camada de gordura, a carne fica suculenta e saborosa.</p>
-                  </div>
-                  
-                </div>
-              </div>
-
-              <div class="group relative">
-                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                  <img src="./images/Contra_file.webp" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
-                </div>
-                <div class="mt-4 flex justify-between">
-                  <div>
-                    <h3 class="text-sm text-gray-700">
-                      <a href="./produtos/contra_file.html">
-                        <span aria-hidden="true" class="absolute inset-0"></span>
-                        Contra Filé
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-sm text-gray-500">Um dos cortes mais pedidos nos churrascos, tem sabor e maciez inconfundíveis.</p>
-                  </div>
-                  <button type="button" class="adz ajw aqw ban bbt biv bpb bpc bpe bpl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="of si"><path d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z"></path></svg></button>                </div>
-              </div>
-
-            </div>
-          </div>
-      </section>
+        </div>
+    </div>
+</section>
     </main>
     <footer class="w-full bg-gradient-to-r mt-10 from-vermelho2 to-vermelho">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <!--Grid-->
           <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-8 py-10 max-sm:max-w-sm max-sm:mx-auto gap-y-8">
               <div class="col-span-full mb-10 lg:col-span-2 lg:mb-0">
-                  <a href="http://127.0.0.1:5500."  class="flex justify-center lg:justify-start">
+                  <a href="/public/index.html"  class="flex justify-center lg:justify-start">
                     <img class="h-20 w-auto" src="./images/logotipo.webp" alt="">
                   </a>
                   <p class="py-8 text-sm text-marrom lg:max-w-xs text-center lg:text-left">Açougue há mais de 5 anos no mercado. Alguma duvida?</p>
